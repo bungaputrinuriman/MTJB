@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/refleksi3.css">
+
+    <title>MyTahfidzJourney</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <img src="assets/img/logo_fix.png" alt="" class="nav__logo-img">
+                MyTahfidzJourney
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#RK" class="nav__link">Ruang Ketenangan</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#murotal" class="nav__link">Murotal</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/logo_fix.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home container" id="home">
+            <div class="swiper homeone">
+                <div class="home__content grid">
+                    <div class="home__group">
+                        <img src="assets/img/doa.png" alt="" class="home__img">
+                        <div class="home__indicator"></div>
+                        <div class="home__details-img">
+                            <h4 class="home__details-title">Al-baqarah</h4>
+                            <span class="home__details-subtitle">ayat 45</span>
+                        </div>
+                    </div>
+                    <div class="home__data">
+                        <h3 class="home__subtitle">#refleksi3</h3>
+                        <h1 class="home__title">Quran Surat<br>Al-baqarah</h1>
+                        <p class="home__description">“Dan mintalah pertolongan dengan sabar dan sholat.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">About</h2>
+                    <p class="about__description">Ketika seorang hamba diuji dengan berbagai kesulitan, cobaan, musibah
+                        sejatinya itu semua adalah dalam rangka meningkatkan keimanan dan mengangkat derajat hamba
+                        tersebut di sisi Allah SWT.
+                        Ada dua cara dalam menghadapi berbagai kesulitan dan cobaan kehidupan. Yakni dengan sabar dan
+                        sholat. Sebagaimana firman Allah SWT dalam surat Al Baqarah ayat Bersabar adalah kunci bagi
+                        setiap hamba agar bisa melalui segala kesulitan dan cobaan dalam hidup.
+                        Seorang hamba yang bersabar berarti dia tabah dalam menghadapi kenyataan yang terjadi, tidak
+                        panik, dan dapat mengendalikan emosinya.
+                    </p>
+                </div>
+                <img src="assets/img/exampapper.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== Ruang Ketenangan ====================-->
+        <section class="section RK" id="RK">
+            <h2 class="section__title">Ruang Ketenangan</h2>
+            <div class="rk__container container grid">
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Dear kamu</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-1')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-1" src="assets/audio/SURAT ALBAQARAH 289.mp3"></audio>
+
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Tempat kamu pulang</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-2')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-2" src=""></audio>
+
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Melodi Quran</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-3')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-3" src=""></audio>
+
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Kembali ke Diri</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-4')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-4" src=""></audio>
+
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Dirimu, Versi 2.0</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-5')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-5" src=""></audio>
+
+                <div class="rk__content">
+                    <img src="assets/img/podcast.png" alt="" class="rk__img">
+                    <h3 class="rk__title">Menyapa Dalam</h3>
+                    <span class="rk__subtitle">hamba allah</span>
+                    <button class="button rk__button" onclick="playAudio('audio-6')">
+                        <i class='bx bx-play-circle'></i>
+                    </button>
+                </div>
+                <audio id="audio-6" src="assets/audio/3albaqarahayat45.mp3"></audio>
+            </div>
+        </section>
+
+        <!--==================== MUROTAL ====================-->
+        <section class="section Murotal" id="murotal">
+            <div class="murotal__container container grid">
+                <div class="murotal__data">
+                    <h2 class="murotal__title">Quran adalah <br>sumber motivasi dan petunjuk hidup.</h2>
+                    <button id="playButton" class="button">Play</button>
+                </div>
+                <img src="assets/img/quran.png" alt="" class="murotal__img">
+            </div>
+            <audio id="audio" src="assets/audio/3albaqarahayat45.mp3"></audio>
+
+        </section>
+
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/logo_fix.png" alt="" class="footer__logo-img">
+                    MyTahfidzJourney
+                </a>
+                <p class="footer__description">"Building Memorization, Creating Habits"</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/mytahfidzjourney/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="https://portalsi.com/" target="_blank" class="footer__social-link">
+                        <img src="assets/img/skim_logo.png" alt="psi" class="psi-icon">
+                    </a>
+                </div>
+            </div>
+            </div>
+            <img src="assets/img/pen.png" alt="" class="footer__img-one">
+            <img src="assets/img/book.png" alt="" class="footer__img-two">
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
